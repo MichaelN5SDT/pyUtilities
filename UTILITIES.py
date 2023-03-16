@@ -107,9 +107,13 @@ def loadJSON(filename):
     dumpJSON) and deserializes it into an object instance graph.    
     
     '''
-    f = open(filename, "r")
-    obj = json.load(f, object_hook = myObjDecoder)
-    f.close()
+    try:
+        f = open(filename, "r")
+        obj = json.load(f, object_hook = myObjDecoder)
+        f.close()
+    except:
+        obj = None
+        
     return obj
 
 #==============================================================================#
