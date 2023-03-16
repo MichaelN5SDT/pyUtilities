@@ -9,8 +9,11 @@ INDENT = '   '
 def dumpObj(obj, level=''):
     '''
     dumpObj() is a recursive function that traverses an object instance 
-    graph and prints-out the attributes. It formats the data with indentations to 
-    make it more easily readable.
+    graph and prints-out the attributes. It formats the data with indentations 
+    to make it more easily readable.
+
+    dumpObj() is useful for verifying the contents or integrity of your 
+    object graph during development.
     
     usage:
         dumpObj(YOUR_OBJECT_INSTANCE)
@@ -76,7 +79,7 @@ def dumpJSON(filename, obj):
 
 def dumpJSONstr(obj):
     '''
-    dumpJSON() returns a JSON string from an object graph that may contain any 
+    dumpJSONstr() returns a JSON string from an object graph that may contain any 
     python object, including those defined in your own code.  
 
     '''
