@@ -25,7 +25,9 @@ is intended to provide a way to review the organization and contents of your gra
 
 ## In-memory Databases
 
-Object graphs provide a useful way of implementing in-memory databases, where keys are well known and the volume of data is not huge compared to your computers' memory. Your code can persist these databases in a file using JSON. These utility functions provide a concise interface to insert into or select items from the object graph based on a list of keys that define the object's location:
+Object graphs provide a useful way of implementing in-memory databases, where keys are well known and the volume of data is not huge compared to your computers' memory. Your code can persist these databases in a file using JSON. 
+
+ - These utility functions provide a concise interface to insert into or select items from the object graph based on a list of keys that define the object's location:
 
 ### *select()*
 
@@ -49,7 +51,7 @@ instantiate the graph as described by tags.
 
         insert(ROOT_DICT_OF_OBJECT_GRAPH, [KEY1, KEY2, KEY3...], [VALUE | LIST | DICT])
 
-These utility functions provide the added bit of code that allows JSON to serialize and deserialize instance graphs that contain your python object classes:
+ - These utility functions provide the added bit of code that allows JSON to serialize and deserialize instance graphs that contain your python object classes:
 
 ### *dumpJSON()*
 
