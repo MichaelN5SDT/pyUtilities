@@ -40,7 +40,7 @@ instantiate the graph as described by tags.
    
 *v* may be any python object or None. *insert()* "should" always succeed.
 
-### useage:
+### usage:
 
         insert(ROOT_DICT_OF_OBJECT_GRAPH, [KEY1, KEY2, KEY3...], [VALUE | LIST | DICT])
 
